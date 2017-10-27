@@ -1,0 +1,5 @@
+node_modules
+dist
+eaternity-edb-data
+src/helpers
+src/validator

@@ -1,0 +1,25 @@
+{
+  "name": "debug-validator",
+  "version": "1.0.0",
+  "description": "Debug the edb-solution validator",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src/ -d dist/",
+    "start": "npm run build &&  node dist/index.js",
+    "debug": "inspect dist/index.js"
+  },
+  "keywords": ["edb-solution", "validator"],
+  "author": "mcmunder",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "inspect-process": "^0.5.0",
+    "jsonfile": "^4.0.0",
+    "jsonschema": "^1.2.0",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "json2csv": "^3.11.5"
+  }
+}
